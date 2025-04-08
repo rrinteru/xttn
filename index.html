@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tính điểm Xét tuyển tài năng 1.3</title>
+  <title>Tính điểm XTTN _ Bách Khoa Hà Nội _ HSA Education</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 20px; background: #f4f4f4; }
     h2 { color: #333; text-align: center; }
@@ -22,8 +22,8 @@
 </head>
 <body>
   <div class="container">
-    <img src="logo tsa.jpg" alt="Logo TSA" class="logo">
-    <h2>Tính điểm xét tuyển tài năng 1.3</h2>
+    <img src="mascot.png" alt="Mascot" class="logo">
+    <h2>Tính điểm XTTN _ Bách Khoa Hà Nội _ HSA Education</h2>
     
     <label for="math">Điểm Toán</label>
     <input type="number" id="math" min="0" max="10" step="0.1">
@@ -34,38 +34,39 @@
     <label for="subject3">Điểm môn 3 (Lý/Hóa/Sinh/Tin)</label>
     <input type="number" id="subject3" min="0" max="10" step="0.1">
 
-    <label for="main">Thành tích chính</label>
-    <select id="main">
-      <option value="50">Giải Nhất quốc gia</option>
-      <option value="45">Giải Nhì quốc gia</option>
-      <option value="40">Giải Ba quốc gia</option>
-      <option value="35">Giải Khuyến khích quốc gia</option>
-      <option value="30">Giải Nhất tỉnh</option>
-      <option value="25">Giải Nhì tỉnh</option>
-      <option value="20">Giải Ba tỉnh</option>
-      <option value="15">Giải Khuyến khích tỉnh</option>
-      <option value="50">Olympia vòng năm</option>
-      <option value="40">Olympia vòng quý</option>
-      <option value="30">Olympia vòng tháng</option>
-    </select>
+<label>Thành tích chính (chọn 1):</label>
+<div class="checkbox-group" id="main-achievements">
+  <label><input type="radio" name="main" value="50"> Giải Nhất quốc gia (HSG)</label>
+  <label><input type="radio" name="main" value="45"> Giải Nhì quốc gia (HSG)</label>
+  <label><input type="radio" name="main" value="40"> Giải Ba quốc gia (HSG)</label>
+  <label><input type="radio" name="main" value="35"> Giải Khuyến khích quốc gia (HSG)</label>
+  <label><input type="radio" name="main" value="30"> Giải Nhất tỉnh (HSG)</label>
+  <label><input type="radio" name="main" value="25"> Giải Nhì tỉnh (HSG)</label>
+  <label><input type="radio" name="main" value="20"> Giải Ba tỉnh (HSG)</label>
+  <label><input type="radio" name="main" value="15"> Giải Khuyến khích tỉnh (HSG)</label>
+  <label><input type="radio" name="main" value="50"> Giải quốc tế (KHKT)</label>
+  <label><input type="radio" name="main" value="45"> Giải Nhất quốc gia (KHKT)</label>
+  <label><input type="radio" name="main" value="40"> Giải Nhì quốc gia (KHKT)</label>
+  <label><input type="radio" name="main" value="35"> Giải Ba quốc gia (KHKT)</label>
+  <label><input type="radio" name="main" value="30"> Giải Tư/Khuyến khích quốc gia (KHKT)</label>
+  <label><input type="radio" name="main" value="25"> Giải Nhất tỉnh (KHKT)</label>
+  <label><input type="radio" name="main" value="20"> Giải Nhì tỉnh (KHKT)</label>
+  <label><input type="radio" name="main" value="15"> Giải Ba tỉnh (KHKT)</label>
+  <label><input type="radio" name="main" value="50"> Olympia vòng năm</label>
+  <label><input type="radio" name="main" value="40"> Olympia vòng quý</label>
+  <label><input type="radio" name="main" value="30"> Olympia vòng tháng</label>
+</div>
 
-    <label><input type="checkbox" id="specialized"> Tôi là học sinh chuyên (cộng 20 điểm vào thành tích chính, tối đa 50 điểm)</label>
+    <label><input type="checkbox" id="specialized"> Học sinh chuyên</label>
 
     <label>Thành tích thưởng (tích chọn nhiều):</label>
-    <div class="checkbox-group">
-      <label><input type="checkbox" class="bonus" value="1"> IELTS 5.0</label>
-      <label><input type="checkbox" class="bonus" value="2"> IELTS 5.5</label>
-      <label><input type="checkbox" class="bonus" value="3"> IELTS 6.0</label>
-      <label><input type="checkbox" class="bonus" value="4"> IELTS 6.5</label>
-      <label><input type="checkbox" class="bonus" value="5"> IELTS 7.0</label>
-      <label><input type="checkbox" class="bonus" value="6"> IELTS 7.5</label>
-      <label><input type="checkbox" class="bonus" value="7"> IELTS 8.0+</label>
-      <label><input type="checkbox" class="bonus" value="2"> Giải Nhì tỉnh khác môn</label>
-      <label><input type="checkbox" class="bonus" value="1"> Giải Ba tỉnh khác môn</label>
-      <label><input type="checkbox" class="bonus" value="3"> Hoạt động xã hội - Bằng khen</label>
-      <label><input type="checkbox" class="bonus" value="1"> Hiến máu</label>
-      <label><input type="checkbox" class="bonus" value="1"> Giải Ba KHKT tỉnh khác</label>
-    </div>
+<div class="checkbox-group"><label><strong>Kỳ thi HSG (môn/năm khác)</strong></label><label><input type="checkbox" class="bonus" value="8"> Giải Nhất quốc gia</label><label><input type="checkbox" class="bonus" value="7"> Giải Nhì quốc gia</label><label><input type="checkbox" class="bonus" value="6"> Giải Ba quốc gia</label><label><input type="checkbox" class="bonus" value="5"> Giải Khuyến khích quốc gia</label><label><input type="checkbox" class="bonus" value="4"> Giải Nhất tỉnh</label><label><input type="checkbox" class="bonus" value="3"> Giải Nhì tỉnh</label><label><input type="checkbox" class="bonus" value="2"> Giải Ba tỉnh</label><label><input type="checkbox" class="bonus" value="1"> Giải Khuyến khích tỉnh</label></div>
+<div class="checkbox-group"><label><strong>Cuộc thi KHKT (đề tài khác)</strong></label><label><input type="checkbox" class="bonus" value="8"> Giải quốc tế</label><label><input type="checkbox" class="bonus" value="7"> Giải Nhất quốc gia</label><label><input type="checkbox" class="bonus" value="6"> Giải Nhì quốc gia</label><label><input type="checkbox" class="bonus" value="5"> Giải Ba quốc gia</label><label><input type="checkbox" class="bonus" value="4"> Giải Tư/KK quốc gia</label><label><input type="checkbox" class="bonus" value="3"> Giải Nhất tỉnh</label><label><input type="checkbox" class="bonus" value="2"> Giải Nhì tỉnh</label><label><input type="checkbox" class="bonus" value="1"> Giải Ba tỉnh</label></div>
+<div class="checkbox-group"><label><strong>Olympia (năm khác)</strong></label><label><input type="checkbox" class="bonus" value="5"> Vòng thi năm</label><label><input type="checkbox" class="bonus" value="4"> Vòng thi quý</label><label><input type="checkbox" class="bonus" value="3"> Vòng thi tháng</label><label><input type="checkbox" class="bonus" value="2"> Vòng thi tuần</label></div>
+<div class="checkbox-group"><label><strong>Chứng chỉ IELTS</strong></label><label><input type="checkbox" class="bonus" value="7"> IELTS 8.0+</label><label><input type="checkbox" class="bonus" value="6"> IELTS 7.5</label><label><input type="checkbox" class="bonus" value="5"> IELTS 7.0</label><label><input type="checkbox" class="bonus" value="4"> IELTS 6.5</label><label><input type="checkbox" class="bonus" value="3"> IELTS 6.0</label><label><input type="checkbox" class="bonus" value="2"> IELTS 5.5</label><label><input type="checkbox" class="bonus" value="1"> IELTS 5.0</label></div>
+<div class="checkbox-group"><label><strong>Giải thưởng năng khiếu, văn hóa, TDTT</strong></label><label><input type="checkbox" class="bonus" value="6"> Giải Nhất quốc gia / HCV QG</label><label><input type="checkbox" class="bonus" value="5"> Giải Nhì quốc gia / HCB QG</label><label><input type="checkbox" class="bonus" value="4"> Giải Ba quốc gia / HCĐ QG</label><label><input type="checkbox" class="bonus" value="3"> Giải Nhất tỉnh / HCV tỉnh</label><label><input type="checkbox" class="bonus" value="2"> Giải Nhì tỉnh / HCB tỉnh</label><label><input type="checkbox" class="bonus" value="1"> Giải Ba tỉnh / HCĐ tỉnh</label></div>
+<div class="checkbox-group"><label><strong>Khen thưởng hoạt động xã hội</strong></label><label><input type="checkbox" class="bonus" value="3"> Bằng khen</label><label><input type="checkbox" class="bonus" value="1"> Giấy khen</label><label><input type="checkbox" class="bonus" value="1"> Giấy chứng nhận hiến máu</label></div>
+
 
     <button onclick="calculateScore()">Tính điểm XTTN</button>
     <div class="result" id="result"></div>
@@ -80,7 +81,10 @@
       const math = parseFloat(document.getElementById("math").value) || 0;
       const literature = parseFloat(document.getElementById("literature").value) || 0;
       const subject3 = parseFloat(document.getElementById("subject3").value) || 0;
-      let main = parseFloat(document.getElementById("main").value);
+      
+      let mainRadio = document.querySelector('input[name="main"]:checked');
+      let main = mainRadio ? parseFloat(mainRadio.value) : 0;
+
       const isSpecialized = document.getElementById("specialized").checked;
 
       if (isSpecialized) {
@@ -107,7 +111,10 @@
       const math = document.getElementById("math").value;
       const literature = document.getElementById("literature").value;
       const subject3 = document.getElementById("subject3").value;
-      const mainText = document.getElementById("main").options[document.getElementById("main").selectedIndex].text;
+      
+      const mainRadioText = document.querySelector('input[name="main"]:checked');
+      const mainText = mainRadioText ? mainRadioText.parentElement.innerText : "Không chọn";
+
       const isSpecialized = document.getElementById("specialized").checked ? " + Học sinh chuyên" : "";
 
       let bonusText = [];
@@ -116,7 +123,8 @@
       });
 
       const result = document.getElementById("result").innerText;
-      const logEntry = `Toán: ${math}, Văn: ${literature}, Môn 3: ${subject3}, Thành tích chính: ${mainText}${isSpecialized}, Thưởng: ${bonusText.join(", ")} => ${result}\n`;
+      const logEntry = `Toán: ${math}, Văn: ${literature}, Môn 3: ${subject3}, Thành tích chính: ${mainText}${isSpecialized}, Thưởng: ${bonusText.join(", ")} => ${result}
+`;
       document.getElementById("log").value += logEntry;
     }
   </script>
